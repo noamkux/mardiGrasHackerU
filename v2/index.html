@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX5 - question 4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <!-- <body onload="hideLightbox(), updateCounter() , updateGallerySrc()"> -->
+  <body onload=" updateCounter(), updateGallerySrc();">
+    <div class="mediaHeader w3-container w3-center w3-animate-zoom">
+      <h1>Welcome to our media page!</h1>
+      <h2>
+        Here, you'll find a collection of amazing photos and videos capturing
+        the essence of the Mardi Gras festival.
+      </h2>
+      From the dazzling costumes to the lively music, our media page is the
+      perfect place to relive the excitement of the festival.<br />
+      So sit back, relax, and immerse yourself in the magic of Mardi Gras!"
+    </div>
+    <div class="galleryWraper">
+      <img
+        id="mainImg"
+        src="media/3352671.jpg"
+        alt=""
+        width="412"
+        class="main-gallery-pic"
+        onclick="showImage(bigPic)"
+      />
+      <br />
+      <img
+        id="galleryPic6"
+        src="media/pexels-hatice-baran-13617132.jpg"
+        alt=""
+        width="100"
+        height="100"
+        class="gallery-pic"
+        onclick="showImage(galleryPic6Src)"
+      />
+
+      <img
+        id="galleryPic5"
+        src="media/pexels-polina-kovaleva-8404994.jpg "
+        alt=""
+        width="100"
+        height="100"
+        class="gallery-pic"
+        onclick="showImage(galleryPic5Src)"
+      />
+      <img
+        id="galleryPic4"
+        src="media/hush-naidoo-jade-photography-_Pyzu4BgTa8-unsplash.jpg"
+        alt=""
+        width="100"
+        height="100"
+        class="gallery-pic"
+        onclick="showImage(galleryPic4Src)"
+      />
+      <img
+        id="galleryPic3"
+        src="media/3376428.jpg"
+        alt=""
+        width="100"
+        height="100"
+        class="gallery-pic"
+        onclick="showImage(galleryPic3Src)"
+      />
+      <img
+        id="galleryPic2"
+        src="media/8310253.jpg"
+        alt=""
+        width="100"
+        height="100"
+        class="gallery-pic"
+        onclick="showImage(galleryPic2Src)"
+      />
+      <img
+        id="galleryPic1"
+        src=" media/pexels-polina-kovaleva-8405035.jpg"
+        alt=""
+        width="100"
+        height="100"
+        class="gallery-pic"
+        onclick="showImage(galleryPic1Src)"
+      />
+      <br />
+      <div class="buttonSection">
+        <button type="button" class="btn btn-primary btn-lg" onclick="next()">
+          Back
+        </button>
+        <!-- אולי כדאי להחליף את הפונט של המספר עמוד לפונט של הפסטיבל -->
+        <p class="picCounter">
+          <span id="picCounter">1</span> of
+          <span id="maxPics"></span>
+        </p>
+        <button type="button" class="btn btn-primary btn-lg" onclick="back()">
+          Next
+        </button>
+      </div>
+    </div>
+
+    <div class="video-section">
+      <h1 class="video-header">
+        here are some selected videos about our festival...
+      </h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Si9q-Ricgjs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="embeddedVideo"
+            ></iframe>
+          </div>
+          <div class="col">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/CVeYXVADjZw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="embeddedVideo"
+            ></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/EkIZwXbSh-Y"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="embeddedVideo"
+            ></iframe>
+          </div>
+          <div class="col">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Dkr_DcTRlT4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="embeddedVideo"
+            ></iframe>
+          </div>
+          <div class="col" id="hiddenVid">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/CVeYXVADjZw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              class="embeddedVideo hiddenVid"
+              id="hiddenVid"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="hideImage()">
+      <img id="lightbox-image" src="" alt="" />
+    </div>
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="media.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

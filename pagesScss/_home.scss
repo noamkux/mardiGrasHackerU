@@ -1,0 +1,190 @@
+.braekdiv {
+    background-color: #9453A6;
+    position: relative;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #F2CC0F 25%, transparent 25%), linear-gradient(225deg, #F2CC0F 25%, transparent 25%), linear-gradient(45deg, #F2CC0F 25%, transparent 25%), linear-gradient(315deg, #F2CC0F 25%, #9453A6 25%);
+    background-position: 19px 0, 19px 0, 0 0, 0 0;
+    background-size: 19px 19px;
+    background-repeat: repeat;
+    height: 20px;
+}
+
+.logo {
+    pointer-events: none;
+}
+
+
+
+
+.backround-pic {
+    background-image: url(Media/flat-lay-carnival-mask-with-beads.jpg);
+    height: 800px;
+    background-size: cover;
+    // object-fit: contain;
+    background-position: center;
+    z-index: -1;
+}
+
+
+
+.welcom-section {
+    position: absolute;
+    font-family: $oswald;
+    height: 750px;
+    border-radius: 30px;
+    margin-top: 5vh;
+    padding: 50px;
+    padding-top: 20px;
+    background-image: url(Media/purplemask.jpg);
+    color: white;
+    background-size: cover;
+    opacity: 1;
+    margin-left: 5vw;
+    width: 50vw;
+    border: solid 3px white
+}
+
+.info-warper {
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 5px solid silver;
+
+}
+
+.yellowline {
+    background-color: $Yellow;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-top: 2px white solid;
+}
+
+.yellowline::after {
+    content: "";
+    position: absolute;
+    height: 1000px;
+    inset: 0;
+    transform: skewY(-8deg);
+    background-color: purple;
+
+    border-top: 2px white solid;
+}
+
+.greenline {
+    background-color: $Green;
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+    border-top: 2px white solid;
+}
+
+.greenline::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewY(-2deg);
+    // width: 50px;
+    background-color: $Green;
+
+    border-top: 2px white solid;
+}
+
+.purpleline {
+    background-color: $Purple;
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+
+}
+
+
+.purpleline::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewY(2deg);
+    height: 60px;
+    background-color: $Purple;
+    border-top: 2px white solid;
+
+    border-bottom: 2px white solid;
+}
+
+.donSection {
+    background-color: $Beige;
+    width: 100%;
+    height: 1000px;
+}
+
+
+@media (max-width: 966px) {
+    .welcom-section {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        // margin-right: 20px;
+        margin-left: 40px;
+    }
+
+    .hide {
+        font-size: 0px;
+    }
+
+    .info-warper {
+        margin-top: 10px;
+        font-size: 21px;
+
+        height: fit-content;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .welcom-section {
+        margin-top: 2vh;
+        padding: 3vh;
+        width: fit-content;
+        top: 0;
+        left: 0;
+        position: relative;
+        margin: 5vw;
+    }
+
+    .donSection {
+        height: 800px;
+    }
+
+    .backround-pic {
+        height: 900px;
+    }
+
+    .welcom-section {
+        height: 900px;
+    }
+
+    .braekdiv {
+        height: 1vh;
+    }
+
+    .info-warper {
+        height: fit-content;
+        line-height: 23px;
+        font-size: 18px;
+        font-weight: 500;
+        overflow: auto;
+    }
+
+    .welcom-header{
+        font-size: 26px;
+    }
+}

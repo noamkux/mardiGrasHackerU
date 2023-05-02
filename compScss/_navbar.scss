@@ -1,0 +1,39 @@
+.navbar-logo img {
+    height: 60px;
+}
+
+
+
+.navbar.navbar-expand-lg {
+    background-color: $Beige;
+    // background: url(Media\masksOnTheStreet.jpg);
+    // background-position: 1000px;
+    // height: 1000px;
+    background-size: contain; 
+    opacity: 1;
+
+    
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar-logo {
+        display: none;
+        opacity: 0;
+    }
+
+
+
+}
+
+@media (max-width: 989px) {
+
+    .navbar-logo {
+        display: none;
+        opacity: 0;
+    }
+}

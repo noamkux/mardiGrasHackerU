@@ -1,0 +1,119 @@
+.backround-pic-faq{
+    
+background-image: url(Media/womanWaringMasks.jpg);
+height: 600px;
+background-size: cover;
+background-position: center 
+
+
+}
+
+.backroundfaq{
+    background-color: $Beige;
+    height: 800px;
+    width : 100%
+}
+.yellowlineFaq {
+    background-color: $Green;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-top: 2px white solid;
+}
+
+.yellowlineFaq::after {
+    content: "";
+    position: absolute;
+    height: 500px;
+    inset: 0;
+    transform: skewY(-8deg);
+    background-color: $Green;
+
+    border-top: 2px white solid;
+}
+
+.greenlineFaq {
+    background-color: $Purple;
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+    border-top: 2px white solid;
+}
+
+.greenlineFaq::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewY(-2deg);
+    // width: 50px;
+    background-color: $Purple;
+
+    border-top: 2px white solid;
+}
+
+.purplelineFaq {
+    background-color: $Yellow;
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+
+}
+
+
+.purplelineFaq::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewY(2deg);
+    height: 60px;
+    background-color: $Yellow;
+    border-top: 2px white solid;
+
+    border-bottom: 2px white solid;
+}
+
+.questionMarkWraper{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    
+}
+
+.top-box{
+    position: relative;
+    width: 550px;
+    height: 260px;
+    background-color: silver;
+    border-radius: 10px;
+    border : 3px black solid;
+    top: 250px;
+    left: 10%;
+    padding: 20px;
+    
+}
+
+
+
+.faq{
+    position: relative;
+    width: 800px;
+    left: 650px;
+    top: 530px;
+    height: 100px;
+    background-color: red;
+    transition: 1.5s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black
+}
+
+.faq:hover{
+    position:relative;
+    top: 100px;
+    height: 800px;
+
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+</head>
+
+<body onload="updateCounter(), updateGallerySrc();">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MARDI GRAS <br> NEW ORLEANS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="navbar-logo">
+                    <img src="Media/mardi gras logo.png">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="backround-pic-media">
+
+    
+
+    <div class="mediaHeader w3-container w3-center w3-animate-zoom">
+        <h1>Welcome to our media page!</h1>
+        <h2>
+            Here, you'll find a collection of amazing photos and videos capturing
+            the essence of the Mardi Gras festival.
+        </h2>
+        From the dazzling costumes to the lively music, our media page is the
+        perfect place to relive the excitement of the festival.<br />
+        So sit back, relax, and immerse yourself in the magic of Mardi Gras!"
+    </div>
+    <div class="galleryWraper">
+        <img id="mainImg" src="media/3352671.jpg" alt="" width="412" class="main-gallery-pic"
+            onclick="showImage(bigPic)" />
+        <br />
+        <img id="galleryPic6" src="media/pexels-hatice-baran-13617132.jpg" alt="" width="100" height="100"
+            class="gallery-pic" onclick="showImage(galleryPic6Src)" />
+
+        <img id="galleryPic5" src="media/pexels-polina-kovaleva-8404994.jpg " alt="" width="100" height="100"
+            class="gallery-pic" onclick="showImage(galleryPic5Src)" />
+        <img id="galleryPic4" src="media/hush-naidoo-jade-photography-_Pyzu4BgTa8-unsplash.jpg" alt="" width="100"
+            height="100" class="gallery-pic" onclick="showImage(galleryPic4Src)" />
+        <img id="galleryPic3" src="media/3376428.jpg" alt="" width="100" height="100" class="gallery-pic"
+            onclick="showImage(galleryPic3Src)" />
+        <img id="galleryPic2" src="media/8310253.jpg" alt="" width="100" height="100" class="gallery-pic"
+            onclick="showImage(galleryPic2Src)" />
+        <img id="galleryPic1" src=" media/pexels-polina-kovaleva-8405035.jpg" alt="" width="100" height="100"
+            class="gallery-pic" onclick="showImage(galleryPic1Src)" />
+        <br />
+        <div class="buttonSection">
+            <button type="button" class="btn btn-primary btn-lg" onclick="next()">
+                Back
+            </button>
+            <!-- אולי כדאי להחליף את הפונט של המספר עמוד לפונט של הפסטיבל -->
+            <p class="picCounter">
+                <span id="picCounter">1</span> of
+                <span id="maxPics"></span>
+            </p>
+            <button type="button" class="btn btn-primary btn-lg" onclick="back()">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h1 class="video-header">
+            here are some selected videos about our festival...
+        </h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Si9q-Ricgjs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="embeddedVideo"></iframe>
+                </div>
+                <div class="col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CVeYXVADjZw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="embeddedVideo"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EkIZwXbSh-Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="embeddedVideo"></iframe>
+                </div>
+                <div class="col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dkr_DcTRlT4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="embeddedVideo"></iframe>
+                </div>
+                <div class="col" id="hiddenVid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CVeYXVADjZw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="embeddedVideo hiddenVid" id="hiddenVid"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container m-0 p-0">
+
+        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+
+            <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/MardiGrasNewOrleans" class="icon me-4" target="_blank">
+                        <img alt="" src="Media\facebook (2).png" width="30px"></img>
+                    </a>
+                    <a class="icon me-4" href="https://twitter.com/MardiGrasNOLA" target="_blank"><img
+                            src="Media/twitter (1).png" width="30px"></img>
+                    </a>
+                    <a class="icon me-4" href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img
+                            src="Media/instagram (1).png" width="30px"></img>
+                    </a>
+                    <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank" class="icon me-4">
+                        <img width="40px" src="Media/tripadvisor.png"></img>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"
+                        class="icon me-4">
+                        <img src="Media/youtube (2).png" width="40px"></img>
+                    </a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Mardi Gras Festival</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>Join the party at Mardi Gras, the ultimate festival of color, music, and celebration!
+                                Experience the energy and excitement of this centuries-old tradition with parades,
+                                costumes, and delicious food. Come and dance, laugh, and indulge in the spirit of joy
+                                and togetherness that defines Mardi Gras. Let the good times roll
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="index.html" class="text-dark">Home</a>
+                            </p>
+                            <p>
+                                <a href="about.html" class="text-dark">About</a>
+                            </p>
+                            <p>
+                                <a href="faq.html" class="text-dark">FAQ</a>
+                            </p>
+                            <p>
+                                <a href="media.html" class="text-dark">Media</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-dark">Contact</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i>5343 Chetunt St New Orleans LA 70115-3054 USA</p>
+                            <p><i class="fas fa-envelope mr-3"></i>press@mardigrasneworleans.com.</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright © 1996-2023
+                MardiGrasNewOrleans.com
+            </div>
+        </footer>
+    </div>
+</div>
+    <div class="lightbox" id="lightbox" onclick="hideImage()">
+        <img id="lightbox-image" src="" alt="" />
+    </div>
+
+    <script src="js/media.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

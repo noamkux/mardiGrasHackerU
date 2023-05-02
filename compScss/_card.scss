@@ -1,0 +1,27 @@
+
+@media (max-width: 989px) {}
+
+    
+@media (max-width: 600px) {
+.donSection{
+    display: flex;
+}
+.card{
+    align-self: flex-start;
+    align-items: center;
+}
+
+
+.donHeader{
+    background-color: red;
+    height: 700px;
+    width: 100%;
+}
+
+
+
+
+.list-group.list-group-flush{
+    display: none;
+}
+}

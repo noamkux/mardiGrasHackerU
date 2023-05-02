@@ -1,0 +1,250 @@
+// .clock-continer {
+//     background-color: red;
+//     position: absolute;
+//     top: 210px;
+//     left: 80px;
+//     rotate: -15deg;
+//     padding: 5px;
+//     border-radius: 5px;
+//     display: block;
+// }
+
+// .clock {
+//     text-align: center;
+//     // display: inline;
+// }
+
+
+
+
+// newclock
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+$font: 'Lato', sans-serif;
+$big: 'Montserrat', sans-serif;
+
+
+
+
+.clockwarper {
+    position: absolute;
+
+    transition-duration: 0.3s;
+    border-radius: 15px;
+    top: 350px;
+    left: 57vw;
+    backdrop-filter: blur(10px);
+    // rotate: 15deg;
+    padding: 5px;
+    overflow: hidden;
+    width: 600px;
+    height: 250px;
+    animation: slide-in 5s forwards 2s;
+    // background-color: $Purple;
+    // background: linear-gradient(-45deg, #eeee52, #dc3ce7, #23d561, #23d56a);
+    // background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border: solid 5px silver;
+    // border-radius: 20% 100% 20% 71% / 100% 30% 30% 45%;
+    // height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes slide-in {
+    0% {
+        left: 100%
+    }
+
+    100% {
+        left: 57%;
+    }
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+.timerbanner {
+    font-family: $festivefont;
+    text-align: center;
+    font-size: 35pt;
+    text-transform: uppercase;
+    padding-top: 10px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+#timer {
+    color: $White;
+    text-align: center;
+    text-transform: uppercase;
+    // font-family: $festivefont;
+    font-size: .8em;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: inline-block;
+    padding: 10px;
+    width: 125px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+.days {
+    background: $Yellow;
+}
+
+.hours {
+    background: $Green;
+}
+
+.minutes {
+    background-color: $Purple;
+}
+
+.seconds {
+    background: $Yellow;
+
+
+}
+
+.numbers {
+    font-family: $big;
+    color: $Black;
+    font-size: 2rem;
+}
+
+@media (max-width:1400px) {
+    .clockwarper {
+        width: 450px;
+        padding: 1px;
+        height: 210px;
+    }
+
+    .timerbanner {
+        font-size: 30px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {width: 85px;
+    font-size: 12px;
+letter-spacing: 2px;}    
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .clockwarper {
+        position: relative;
+        top: 0;
+        left: 0;
+        rotate: 0deg;
+        padding: auto;
+        margin: auto;
+        height: fit-content;
+        width: auto;
+        border-radius: 0px;
+        padding: 0.4vh;
+        margin: 0px;
+        padding-bottom: 25px;
+        overflow: hidden;
+    }
+
+    .numbers {
+        font-size: 1.5em;
+    }
+
+    #timer {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .timerbanner {
+        font-family: $festivefont;
+        font-size: 30pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: black
+    }
+}
+
+
+@media (max-width: 600px) {
+
+
+    .clockwarper {
+        position: relative;
+        top: 0;
+        left: 0;
+        rotate: 0deg;
+        height: 130px;
+        width: auto;
+        border-radius: 0px;
+        padding: 3px;
+        margin: 0px;
+        border: solid 3px silver;
+        overflow: hidden;
+    }
+
+    .timerbanner {
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-family: $oswald;
+    }
+
+    .numbers {
+        font-size: 1px;
+    }
+
+    #timer {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        padding: 2px;
+        width: 70px;
+        height: 70px;
+        font-size: 10px;
+        letter-spacing: normal;
+        font-weight: bold;
+        font-family: sans-serif;
+
+
+    }
+
+    .numbers {
+        font-size: 32px;
+        height: 50px;
+    }
+}

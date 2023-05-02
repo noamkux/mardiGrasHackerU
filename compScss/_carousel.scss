@@ -1,0 +1,33 @@
+.carousel-img {
+
+    height: 75vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+.carousel-warper {
+    padding: 80px;
+}
+
+
+
+
+@media (max-width: 989px) {
+
+    .carousel-warper {
+        padding-top: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+@media (max-width: 600px){
+    .carousel-warper {
+        padding-top: 80px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }}
