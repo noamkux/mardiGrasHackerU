@@ -1,52 +1,74 @@
-  // ------------------------עד לכאן היה עמוד מדיה, מפה יש עמוד קוונטקט-------------------//
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
+.backround-pic-contact {
+  background-image: url(Media/pexels-polina-kovaleva-8405035.jpg);
+  height: fit-content;
+  background-size: cover;
+
+  background-position: center;
+  z-index: -1;
+
+}
+
+.contact-header {
+  width: 50%;
+  border: #333 solid 2px;
+  margin: auto;
+  position: relative;
+  display: block;
+  top: 70px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 150px;
   
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .contactform {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    width: 100%;
-    padding: 1rem;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  
-  label {
-    margin-bottom: 0.5rem;
-  }
-  
-  input,
-  textarea {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    resize: none;
-  }
-  
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-top: 1rem;
-    cursor: pointer;
-  }
+  background-color: #c7c7c7;
+}
+
+#contact-form {
+  flex-direction: row;
+}
+
+.contact-container {
+  display: block;
+  position: relative;
+ 
+
+}
+
+
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.label-form {
+  margin-bottom: 0.5rem;
+}
+
+.form-class{
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}

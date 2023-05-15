@@ -1,10 +1,12 @@
 .backround-pic-media {
-  background-image: url(Media/maskAndAounots.jpg);
-  height: 800px;
+  background-image: url(Media/homeBg.jpg);
+  height: fit-content;
+  padding-bottom: 100px;
   background-size: cover;
   // object-fit: contain;
   background-position: center;
   z-index: -1;
+  // position: relative;
 }
 
 
@@ -12,32 +14,68 @@
   padding-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 50px;
-  max-width: 800px;
-  height: fit-content;
+  margin-top: 10px;
+  max-width: 1000px;
+  height: 650px;
+  // aspect-ratio: 2/3;
   padding-bottom: 20px;
-  background-color: beige;
-  border: 3px double black;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+  // background-image: linear-gradient( 179.2deg,  rgba(255,221,24,1) 16.1%, rgba(241,102,36,1) 86.8% );
+  border: 3.5px solid black;
   text-align: center;
   border-radius: 10px;
 }
 
-.w3-container.w3-center.w3-animate-zoom {
-  animation-duration: 3000ms;
-}
+
+
 
 .buttonSection {
-  margin-top: 5px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+  height: 80px;
   display: flex;
   justify-content: space-between;
+  background-color: #ffa750;
+  opacity: 1;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffa750 24px), repeating-linear-gradient(#e400ff55, #e400ff);
 }
+
+.btn.btn-dark.btn-lg {
+  border: 1px white solid;
+  border-radius: 5px;
+}
+
 
 .embeddedVideo {
   margin: 0px;
   width: 100%;
   margin-bottom: 50px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.embeddedVideo:hover {
+  border: 4px solid white;
+  transition-duration: 100ms;
+}
+
+.video-section {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 30px;
+  border: 5px black solid;
+  background-color: #ffca2e;
+  background-image: linear-gradient(167deg, #ffca2e 28%, #38d271 100%);
+
 }
 
 .video-header {
@@ -48,14 +86,35 @@
 
 .gallery-pic {
   object-fit: cover;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.gallery-pic:hover {
+  border: 3px solid white;
+  transition-duration: 100ms;
+}
+
+
+.main-gallery-pic:hover {
+  border: 5px solid white;
+  transition-duration: 100ms;
 }
 
 .main-gallery-pic {
-  width: 812px;
-  aspect-ratio: 3/2;
+  width: 800px;
+  height: 400px;
+  background-color: black;
   object-fit: contain;
+  border-radius: 10px;
+  border: 2px solid white;
   margin-bottom: 16px;
+  cursor: pointer;
 }
+
 
 .galleryButton {
   width: 50px;
@@ -63,7 +122,10 @@
 }
 
 .picCounter {
-  margin-top: 16px;
+  margin-top: 8px;
+  color: black;
+  font-size: 30px;
+  font-family: $festivefont;
 }
 
 .lightbox {
@@ -74,6 +136,15 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
+}
+
+.backround-gradient {
+  background: rgb(165, 117, 55);
+  background: linear-gradient(180deg, rgba(165, 117, 55, 1) 14%, rgba(33, 209, 146, 1) 94%);
+  width: auto;  
+  height: 600px;
+  display: block;
+  position: relative;
 }
 
 .lightbox img {
@@ -89,12 +160,19 @@
 }
 
 .mediaHeader {
-  display: grid;
-  width: 1200px;
-  height: 300px;
+  position: relative;
+  display: block;
+  text-align: center;
+  height: fit-content;
   border-radius: 30px;
-  background-color: RED;
+  padding: 10px;
+  background-image: radial-gradient(circle 489px at 49.3% 46.6%, rgba(255, 214, 126, 1) 0%, rgba(253, 200, 0, 1) 100.2%);
   margin: auto;
+  top: 50px;
+  margin-bottom: 100px;
+  width: 75%;
+  border: 2px black solid;
+  left: 0px;
 }
 
 @media screen and (max-width: 992px) {
@@ -125,6 +203,7 @@
     margin-right: 15px;
     display: flex;
     justify-content: space-between;
+
   }
 
   .gallery-pic {
@@ -177,11 +256,13 @@
     margin-right: auto;
     margin-left: auto;
     border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
     border: 2px;
     height: fit-content;
     padding-bottom: 25px;
+    border: 2px solid white;
+  }
+  .video-section{
+    padding-bottom: 50px;
   }
 
   .main-gallery-pic {
@@ -194,6 +275,7 @@
   .gallery-pic {
     width: 80px;
     height: 100px;
+    object-fit: cover;
   }
 
   .video-header {
@@ -207,15 +289,9 @@
     margin-bottom: 0px;
     width: 100%;
     height: 200px;
+    border: none;
   }
 
-  .mediaHeader {
-    padding: 30px;
-    text-align: center;
-    line-height: 25px;
-    font-size: 16px;
-    padding-top: 0px;
-  }
 
   h2 {
     font-size: 26px;
@@ -226,21 +302,24 @@
   }
 
   .mediaHeader {
-    display: grid;
-    width: 275px;
-    height: 300px;
-    margin-bottom: 50px;
-    left: 500px;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    // left: 500px;
   }
 
   .mediaHeader h1 {
     font-size: 22pt;
   }
-  
+
   .mediaHeader h2 {
-    font-size: 2px;
+    font-size: 20px;
   }
+
   .mediaHeader h4 {
-    font-size: 2px;
+    font-size: 20px;
   }
 }

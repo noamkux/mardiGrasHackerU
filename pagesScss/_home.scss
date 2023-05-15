@@ -1,57 +1,100 @@
-.braekdiv {
-    background-color: #9453A6;
-    position: relative;
-    opacity: 1;
-    background-image: linear-gradient(135deg, #F2CC0F 25%, transparent 25%), linear-gradient(225deg, #F2CC0F 25%, transparent 25%), linear-gradient(45deg, #F2CC0F 25%, transparent 25%), linear-gradient(315deg, #F2CC0F 25%, #9453A6 25%);
-    background-position: 19px 0, 19px 0, 0 0, 0 0;
-    background-size: 19px 19px;
-    background-repeat: repeat;
-    height: 20px;
-}
-
 .logo {
     pointer-events: none;
 }
 
 
+.btn-doner {
+    z-index: 10;
+    margin: auto;
+    width: 75px;
+    height: 50px;
+    font-size: 22px !important;
+    background-color: #F2CC0F !important;
+    border: 2px white solid !important;
+}
+
+.btn-doner:hover {
+    background-color: #caaa0b !important;
+    border: 3px white solid !important;
+}
+
+
+.background-waves {
+    width: 200%;
+    top: 1400px;
+    background-size: 200%;
+}
+
+.card-don {
+    transition: all 1s;
+    max-height: 300px;
+}
+
+
+
+.donHeader.col {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
 
 
 .backround-pic {
-    background-image: url(Media/flat-lay-carnival-mask-with-beads.jpg);
-    height: 800px;
-    background-size: cover;
-    // object-fit: contain;
+    background-image: url(Media/mardiGrasPradeSmillyFace.jpg);
+    height: 600px;
+    background-size: 100%;
     background-position: center;
     z-index: -1;
 }
 
 
 
+
+
 .welcom-section {
-    position: absolute;
+    position: relative;
+    top: -210px;
     font-family: $oswald;
-    height: 750px;
     border-radius: 30px;
-    margin-top: 5vh;
-    padding: 50px;
-    padding-top: 20px;
-    background-image: url(Media/purplemask.jpg);
+    background: linear-gradient(to bottom,
+            $Yellow 0%, $Yellow 33%,
+            $Green 33%, $Green 66%,
+            $Purple 66%, $Purple 100%);
     color: white;
-    background-size: cover;
     opacity: 1;
+    padding-top: 30px;
     margin-left: 5vw;
-    width: 50vw;
-    border: solid 3px white
+    border: solid 3px white;
+    height: fit-content;
+    display: flex;
+    margin-top: 120px;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    overflow: hidden;
+    left: 0px;
+    width: 25%;
+    max-height: 475px;
+    padding-bottom: 20px;
+    animation: enterFromRight 2s 0s 1 forwards;
 }
 
-.info-warper {
-    margin-top: 50px;
-    padding: 10px;
-    font-size: 23px;
-    font-weight: 500;
-    border-radius: 15px;
-    border: 5px solid silver;
+@keyframes enterFromRight {
+    0% {
+        left: -550px;
+        opacity: 0;
 
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1r;
+
+    }
+}
+
+.item2 {
+    height: 100%;
 }
 
 .yellowline {
@@ -66,12 +109,16 @@
     content: "";
     position: absolute;
     height: 1000px;
+    z-index: -1;
     inset: 0;
     transform: skewY(-8deg);
-    background-color: purple;
-
+    // background-color: purple;
+    background: rgb(128, 0, 128);
     border-top: 2px white solid;
+    //    border-end-start-radius: 500px;
 }
+
+
 
 .greenline {
     background-color: $Green;
@@ -98,12 +145,24 @@
     position: relative;
     width: 100%;
     height: 50px;
-
     border-bottom: 2px white solid;
     border-top: 2px white solid;
 
 }
 
+.sticky-icon {
+    width: fit-content;
+    z-index: -2;
+}
+
+
+.card-body {
+    background-color: #fff;
+}
+
+ul {
+    border: 0px;
+}
 
 .purpleline::after {
     content: "";
@@ -113,78 +172,329 @@
     height: 60px;
     background-color: $Purple;
     border-top: 2px white solid;
-
     border-bottom: 2px white solid;
 }
 
-.donSection {
-    background-color: $Beige;
-    width: 100%;
-    height: 1000px;
+
+.donButtonSection {
+    margin: 0px;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 
-@media (max-width: 966px) {
+.donImg {
+    display: none;
+}
+
+
+.list-group.list-group-flush,
+.card-text.collapse,
+.card-body {
+    z-index: 9999;
+}
+
+.card>.list-group {
+    border-top: 1px #dee2e6 solid !important;
+}
+
+.donSection {
+    // background: rgb(169, 0, 184);
+    // background: linear-gradient(180deg, rgba(169, 0, 184, 1) 24%, rgba(30, 172, 121, 1) 90%);
+    background-color: $Purple;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    justify-items: center;
+    padding-top: 100px;
+    top: 250px;
+    display: grid;
+    padding-bottom: 150px;
+    margin-top: 20px;
+
+
+}
+
+
+
+.donHeader {
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.card.p-0 {
+    display: block;
+    min-height: 435px;
+    max-height: 435px;
+    margin-bottom: 0px;
+}
+
+
+
+.card {
+    margin: 25px;
+    margin-bottom: 125px;
+    height: 20px;
+    overflow-y: auto;
+}
+
+.card.p-0::-webkit-scrollbar {
+    display: none;
+}
+
+.row.cards {
+    padding-top: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1px;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: silver;
+    opacity: 1;
+    background: rgb(193, 69, 204);
+    background: linear-gradient(196deg, rgba(193, 69, 204, 1) 24%, rgba(30, 172, 121, 1) 90%);
+    border: 2px white solid;
+
+}
+
+@media (max-width: 1300px) {
+
+
+    .donImg {
+        display: block;
+    }
+
+
+    #doner3 {
+        display: none;
+    }
+
+    #doner2 {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
     .welcom-section {
-        width: 90%;
         margin: auto;
-        margin-top: 50px;
-        // margin-right: 20px;
-        margin-left: 40px;
+        margin-top: 200px;
+        top: -40px;
+        width: 100%;
     }
 
-    .hide {
-        font-size: 0px;
-    }
 
-    .info-warper {
-        margin-top: 10px;
-        font-size: 21px;
 
+    .donSection {
         height: fit-content;
     }
 
+
+    .donImg {
+        display: block;
+    }
+
+
+    .backround-pic {
+        height: fit-content;
+    }
+
+    .welcom-header {
+        font-size: 4.2vw;
+    }
+
+    #doner2 {
+        display: none;
+    }
+
+    #doner3 {
+        display: none;
+    }
+
+
+    .donImg {
+        display: block;
+    }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
+
+
+
+    .donHeader {
+        padding-top: 0px;
+        height: fit-content;
+    }
+
+
+
+    .donButtonSection {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
 
     .welcom-section {
-        margin-top: 2vh;
-        padding: 3vh;
-        width: fit-content;
-        top: 0;
-        left: 0;
+        // margin-top: 2vh;
+        // padding: 3vh;
+        // height: fit-content;
+        top: 10px;
+        border-radius: 0px;
+        // left: 0;
         position: relative;
-        margin: 5vw;
+        // margin: 5vw;
+        animation: none;
     }
 
     .donSection {
-        height: 800px;
+        height: fit-content;
+        // padding-bottom: 80vh;
+        margin-bottom: 0px;
+
+    }
+
+
+
+
+
+    .welcom-section {
+        padding: 5px;
+        height: fit-content;
+
+    }
+
+
+    .card-don {
+        min-height: 300px !important;
+    }
+
+    .welcom-header {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+
+    .card {
+        align-self: flex-start;
+        align-items: center;
+    }
+
+    .list-group.list-group-flush {
+        display: none;
+    }
+
+    #doner1 {
+        display: none;
+    }
+
+    #doner3 {
+        display: none;
+    }
+
+    #doner2 {
+        display: none;
+    }
+
+
+
+    .yellowline::after {
+        content: "";
+        height: 1900px;
+        z-index: -1;
+    }
+
+    .buttonSection {
+        padding: 0px;
+    }
+
+    .card.p-0 {
+        margin-bottom: 10px;
+
+
+    }
+
+    .donImg {
+        display: block;
+    }
+
+    .donButtonSection {
+        position: relative;
+        top: 50vh;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .backround-pic {
+        height: 100vh;
+    }
+
+    .donSection {
+        padding: 20px;
+        height: fit-content;
+        padding-top: 30px;
+    }
+
+
+    .donImg {
+        display: block;
+    }
+
+
+
+    .welcom-section {
+        height: fit-content;
+    }
+
+
+    .section-content {
+        font-size: 20px;
+        top: 0px;
+    }
+
+    .card.p-0 {
+        height: 300px !important;
+        min-height: 0px;
+    }
+
+    .donButtonSection {
+        position: relative;
+        top: 0vh;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 20px;
+        width: 300px !important;
+        background-color: rgb(215, 215, 138);
+        border: 2px solid white;
+        backdrop-filter: blur(5px);
     }
 
     .backround-pic {
-        height: 900px;
+        height: 100%;
+        background-size: cover;
+        animation: none;
+        background-position: bottom;
     }
 
-    .welcom-section {
-        height: 900px;
-    }
-
-    .braekdiv {
-        height: 1vh;
-    }
-
-    .info-warper {
-        height: fit-content;
-        line-height: 23px;
-        font-size: 18px;
-        font-weight: 500;
-        overflow: auto;
-    }
-
-    .welcom-header{
-        font-size: 26px;
-    }
 }

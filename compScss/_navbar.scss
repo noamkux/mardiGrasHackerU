@@ -2,13 +2,13 @@
     height: 60px;
 }
 
+.navbar{
+    height: 60px;
+}
 
 
 .navbar.navbar-expand-lg {
-    background-color: $Beige;
-    // background: url(Media\masksOnTheStreet.jpg);
-    // background-position: 1000px;
-    // height: 1000px;
+    background-color: #FDF8E5;
     background-size: contain; 
     opacity: 1;
 
@@ -26,6 +26,11 @@
         opacity: 0;
     }
 
+    
+.navbar{
+    height: 60px;
+}
+
 
 
 }
@@ -36,4 +41,20 @@
         display: none;
         opacity: 0;
     }
+
+    
+.navbar{
+    
+    background-color: #FDF8E5;
+    height: 60px;
+    z-index: 3;
+}
+
+// .navbar-expand{
+//     background-color: ;
+// }
+
+.navbar-container{
+    background-color: #FDF8E5;
+}
 }

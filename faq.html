@@ -14,8 +14,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">MARDI GRAS <br> NEW ORLEANS</a>
+        <div class="container-fluid navbar-container">
+            <a class="navbar-brand fs-6" href="#">MARDI GRAS <br> NEW ORLEANS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="media.html">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="faq.html">FAQ</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -46,154 +46,180 @@
             </div>
         </div>
     </nav>
-
     <div class="backround-pic-faq">
-
-        <div class="faq" id="faqUp" onclick="
-        revertMoveBoxes()">Q: How much does it cost to go to Mardi Gras?
-            It's free! Not only that, but you'll leave with bags of Mardi Gras beads and throws. That's why we call it
-            the "Greatest Free Show on Earth!"
-            Q: I only have limited time. What is the prime time to visit during Mardi Gras?
-            The weekend before Fat Tuesday is the prime time to visit New Orleans for Mardi Gras. This is the weekend
-            when Bacchus and Endymion, two of the biggest parades of the season, roll down the streets of New Orleans.
-            The streets are packed all day Saturday and Sunday with parade watchers. If you can stay longer than a
-            weekend, Monday (Lundi Gras) and Fat Tuesday are also great days to experience Mardi Gras. Orpheus, another
-            big parade, rolls on that Monday night, and the Zulu Lundi Gras festival goes on all day. On Fat Tuesday,
-            walking around the French Quarter and seeing all of the costumes and masks is a unique and thrilling
-            experience.
+        <div class="sticky-icon">
+            <a class="trivia" href="quiz.html"><i class="fab fa-trivia"></i> Try Out Our Trivia Quiz </a>
         </div>
 
 
-        <section class="top-box" id="faqDown" onclick="moveBoxes()">
+
+        <section class="top-box" id="faqDown">
             <div>
-                <h1>Frequently Asked Questions</h1>
+                <h1 class="faq-header text-center">Frequently Asked Questions</h1>
             </div>
 
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, earum quod nihil dolorum accusantium
-                quasi alias nam illum dolore corporis odit, expedita nemo maxime possimus.
+            <div class="text-center faq-welcom">
+                Welcome to the Mardi Gras Festival FAQ page for New Orleans! Here you will find answers to common
+                questions about this famous celebration, including dates, events, traditions, and safety tips. We hope
+                this information helps you make the most of your Mardi
+                Gras experience.
+                <br>
+                <p class="display-6 fw-medium">Scroll Down For More</p>
             </div>
 
         </section>
-
-
-        <div class="questionMarkWraper">
-            <img src="Media\questionMark.png" alt="Blue question Mark" width="200px">
-        </div>
-
-
-
 
     </div>
     <div class="backroundfaq">
         <div class="yellowlineFaq"></div>
         <div class="greenlineFaq"></div>
         <div class="purplelineFaq"></div>
-        <div class="accordion-container container ">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="bg-theme-colors accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <div class="accordion-container container" id="faqSection"
+        >
+            <div class="accordion accordion-flush" id="accordionFlushExample"style="background-color: transparent;">
+                <div class="accordion-item" style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingOne" style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                            style="background-color: transparent;">
                             What is Mardi Gras?
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Mardi Gras is a festival that originated in France and is now
+                        data-bs-parent="#accordionFlushExample"
+                        style="background-color: transparent;">
+                        <div class="accordion-body"
+                        style="background-color: transparent;"
+                        >Mardi Gras is a festival that originated in France and is now
                             celebrated in many countries
                             around the world, particularly in New Orleans, Louisiana. The festival is celebrated in the
                             days leading up to Ash Wednesday, which marks the beginning of the Christian season of Lent.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <div class="accordion-item"
+                
+                style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingTwo"
+                    
+                    style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                            
+                        style="background-color: transparent;">
                             When is Mardi Gras?
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Mardi Gras is celebrated on the day before Ash Wednesday, which
+                        data-bs-parent="#accordionFlushExample"
+                        
+                        style="background-color: transparent;">
+                        <div class="accordion-body"
+                        
+                        style="background-color: transparent;">Mardi Gras is celebrated on the day before Ash Wednesday, which
                             falls on a different day each year depending on the date of Easter. However, the festival
                             season in New Orleans typically begins in early January and lasts until the day before Ash
                             Wednesday.</div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <div class="accordion-item"
+                
+                style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingThree"
+                    
+                    style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                            aria-controls="flush-collapseThree"
+                            style="background-color: transparent;">
                             What happens during Mardi Gras?
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Mardi Gras is a time of revelry and celebration, with parades,
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample"
+                        style="background-color: transparent;">
+                        <div class="accordion-body"
+                        style="background-color: transparent;">Mardi Gras is a time of revelry and celebration, with parades,
                             parties, and other events taking place throughout the festival season. People dress up in
                             colorful costumes, throw beads and other trinkets to the crowds, and enjoy traditional food
                             and drink.</div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <div class="accordion-item"
+                style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingFour"
+                    style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
+                            aria-controls="flush-collapseFour"
+                            style="background-color: transparent;">
                             What is the significance of the beads and trinkets thrown during Mardi Gras?
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                        data-bs-parent="#accordionFlushExample">
+                        data-bs-parent="#accordionFlushExample"
+                        style="background-color: transparent;">
                         <div class="accordion-body">The beads and other trinkets thrown during Mardi Gras are a
                             tradition that dates back to the early days of the festival. They are said to represent the
                             colors of the festival and to bring good luck to those who catch them.</div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <div class="accordion-item"
+                style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingFive"
+                    style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFive" aria-expanded="false"
-                            aria-controls="flush-collapseFive">
+                            aria-controls="flush-collapseFive"
+                            style="background-color: transparent;">
                             Is Mardi Gras family-friendly?
                         </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">While Mardi Gras is known for its wild parties and risqué behavior,
+                        data-bs-parent="#accordionFlushExample"
+                        style="background-color: transparent;">
+                        <div class="accordion-body"
+                        style="background-color: transparent;">While Mardi Gras is known for its wild parties and risqué behavior,
                             there are also many family-friendly events that take place during the festival. Some parades
                             and events are specifically geared toward children, and many families enjoy attending Mardi
                             Gras together.</div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <div class="accordion-item"
+                style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingSix"
+                    style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"
+                            style="background-color: transparent;">
                             How can I attend Mardi Gras in New Orleans?
                         </button>
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">If you're interested in attending Mardi Gras in New Orleans, it's
+                        data-bs-parent="#accordionFlushExample"
+                        style="background-color: transparent;">
+                        <div class="accordion-body"
+                        style="background-color: transparent;">If you're interested in attending Mardi Gras in New Orleans, it's
                             best to plan ahead and book accommodations well in advance, as the festival draws large
                             crowds. You can also check the official Mardi Gras website for information on events,
                             parades, and other activities taking place during the festival.</div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <div class="accordion-item"
+                style="background-color: transparent;">
+                    <h2 class="accordion-header" id="flush-headingSeven"
+                    style="background-color: transparent;">
+                        <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                            aria-controls="flush-collapseSeven">
+                            aria-controls="flush-collapseSeven"
+                            style="background-color: transparent;">
                             What should I wear to Mardi Gras?
                         </button>
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample"
+                        style="background-color: transparent;">
                         <div class="accordion-body">Mardi Gras is a time to dress up in colorful costumes and wear
                             masks, hats, and other festive accessories. Many people also choose to wear traditional
                             Mardi Gras colors of purple, green, and gold. However, it's important to keep in mind that
@@ -210,7 +236,7 @@
 
         <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
 
-            <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+            <section class="d-flex justify-content-between p-4 text-white footer">
 
                 <div class="me-5">
                     <span>Get connected with us on social networks:</span>
@@ -288,6 +314,8 @@
             </section>
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright © 1996-2023
                 MardiGrasNewOrleans.com
+                <a
+                    href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003">...</a>
             </div>
         </footer>
     </div>

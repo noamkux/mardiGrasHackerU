@@ -1,0 +1,86 @@
+.aboutContainer {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  position: relative;
+  top: 30px;
+  border: silver 5px solid;
+  height: fit-content ;
+  
+}
+
+.card-img-top {
+  width: 50px;
+  height: 150px;
+  object-fit: contain;
+  padding-top: 10px;
+
+}
+
+.mainWraper {
+  align-items: center;
+}
+
+.backround-pic-about {
+  background-image: url(Media/maskAndAounots.jpg);
+  height: (fit-content);
+  padding-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+}
+
+.mayor-info {
+  padding: 15px;
+}
+
+
+.mayor-header {
+  margin: 30px;
+}
+
+.media-section-img {
+  width: initial;
+  width: 100%;
+  object-fit: cover;
+  height: 125px;
+  animation: moveImage 40s linear infinite;
+  border-radius: 15px;
+
+}
+
+@keyframes moveImage {
+  0% {
+    object-position: 0% 0%;
+  }
+
+  25%{
+    object-position: 30% 30%;
+  }
+
+  43% {
+    object-position: 100% 100%;
+  }
+
+  100% {
+    object-position: 0% 0%;
+  }
+}
+
+@media (max-width:575px) {
+
+  .backround-pic-about{
+    padding-bottom: 0px;
+  }
+
+  .aboutContainer{
+    // top: 200px;
+    top: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+  border: none;
+}
+}
