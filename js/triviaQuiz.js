@@ -55,8 +55,6 @@ let scoreMSg = ""
 
 let progressBar = 0;
 
-let progressPx = ""
-
 let quizCounter = 0
 
 let isUserRight = false
@@ -65,6 +63,42 @@ var score = 0;
 
 let radioButtons = document.getElementsByName("radio");
 
+
+function nextQuiz() {
+
+    if (quizCounter >= 9) {
+        showImage();
+        score = 0
+        quizCounter = 0
+        unmarkRadio()
+        document.getElementById("progressBar").style.width = "0px";
+    }
+    else if (document.querySelector('input[type="radio"]:checked') === null) {
+            return
+        }
+
+
+        else if (isUserRight == true) {
+            score++
+            progressBar += 10
+            document.getElementById("progressBar").style.width = `${progressBar}%`
+
+
+        }
+
+
+    quizCounter++
+    updateA()
+    updateQ()
+    unmarkRadio()
+
+
+
+
+
+    isUserRight = false
+
+}
 
 function updateQ() {
 
@@ -84,81 +118,50 @@ function unmarkRadio() {
 }
 
 
-function nextQuiz(num) {
-    console.log("progres bar :" + progressBar);
-    console.log(`"${progressBar}px"`);
-    console.log("score:" + score);
-    if (quizCounter >= 9) {
-        showImage();
-        score = 0
-        quizCounter = 0
-        unmarkRadio()
-        progressBar = 0
-        document.getElementById("progressBar").style.width = "0px";
-    }
-    else {
-        if (document.querySelector('input[type="radio"]:checked') === null) {
-            return
-        }
-        quizCounter++;
-    }
-    if (isUserRight == true) {
-        score++
-        progressBar = progressBar + 10
-        document.getElementById("progressBar").style.width = `${progressBar}%`;
-    }
-    updateA()
-    updateQ()
-    unmarkRadio()
 
-
-
-
-
-    isUserRight = false
-
-}
 function checkAnswer(answerIndex) {
     if (answerIndex === mardiGrasTrivia[quizCounter].correctAnswerIndex) {
-        console.log("Correct!");
+        
         isUserRight = true
     } else {
-        console.log("Incorrect.")
         isUserRight = false;
     }
 }
 function initQuiz() {
     updateA()
     updateQ()
+    progressBar = 0
 }
 
 function handleScoreMsg() {
     
-        if (score >= 1 && score <= 3) {
-            return `<h2 class="text-center p-1 display-6">Great job on completing the Mardi Gras trivia quiz! While your score may be on the lower side, don't worry, there's always room for improvement. </h2>
+    progressBar = 0
+
+    if (score >= 1 && score <= 3) {
+        return `<h2 class="text-center p-1 display-6">Great job on completing the Mardi Gras trivia quiz! While your score may be on the lower side, don't worry, there's always room for improvement. </h2>
           <p class="text-center">  Keep exploring and learning about this festive celebration, and you'll be a Mardi Gras expert in no time. </p>
             <p class="mb-0 text-center">  Don't forget to keep scrolling the website for more interesting content and fun quizzes!<br><p class="text-center">Click Here To Play Again</p></p>
             `
 
-        }
-        else if (score >= 4 && score <= 6) {
-            return `<h2 class="text-center p-1 display-6">Congratulations on completing the Mardi Gras trivia quiz! You scored in the middle range, which means you have a decent understanding of this festive celebration.</h2>
+    }
+    else if (score >= 4 && score <= 6) {
+        return `<h2 class="text-center p-1 display-6">Congratulations on completing the Mardi Gras trivia quiz! You scored in the middle range, which means you have a decent understanding of this festive celebration.</h2>
         <p>Keep exploring and learning about the rich history and traditions of Mardi Gras, and you'll be ready to celebrate in no time. </p>
         <p class="mb-0">  Don't forget to keep scrolling the website for more interesting content and fun quizzes!<br>Click Here To Play Again</p>`
 
-        }
-        else if (score >= 7 && score <= 9) {
-            return `<h2 class="text-center p-1  display-6">Excellent job on completing the Mardi Gras trivia quiz!</h2>
+    }
+    else if (score >= 7 && score <= 9) {
+        return `<h2 class="text-center p-1  display-6">Excellent job on completing the Mardi Gras trivia quiz!</h2>
     <p>Your score shows that you have a great understanding of this festive celebration. Keep up the great work, and continue to explore the rich history and traditions of Mardi Gras. You're well on your way to becoming a Mardi Gras expert! </p>
       <p class="mb-0">  Don't forget to keep scrolling the website for more interesting content and fun quizzes!<br>Click Here To Play Again</p>`
 
-        }
-        else if (score == 10) return `<h2 class="text-center p-1  display-6">Wow, congratulations on acing the Mardi Gras trivia quiz!</h2>
+    }
+    else if (score == 10) return `<h2 class="text-center p-1  display-6">Wow, congratulations on acing the Mardi Gras trivia quiz!</h2>
      <p>You truly know your stuff when it comes to this festive celebration. Your score of 10 out of 10 is truly impressive! Keep up the great work and continue to explore the rich history and traditions of Mardi Gras. You're a Mardi Gras expert!</p>
      <p class="mb-0"> Don't forget to keep scrolling the website for more interesting content and fun quizzes!
      <br>Click Here To Play Again</p>`
 
-    }
+}
 
 
 
@@ -169,9 +172,9 @@ function showImage() {
         <div class="container last-container w-75 mt-5">
     <div class="last-q-textbox" onclick="newQuiz()">
         <h1 class="text-center p-1">YOUR SCORE IS : ${score} </h1>` + handleScoreMsg()
-           
+
     }, 1000);
- 
+
 
     document.getElementById("lightbox").style.display = "flex";
 }
@@ -201,5 +204,7 @@ for (let i = 0; i < 4; i++) {
     document.getElementById(`span${i}`).addEventListener("click", () => checkAnswer(i));
 
 }
+
+nextQuiz()
 
 

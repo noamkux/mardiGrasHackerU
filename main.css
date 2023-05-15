@@ -483,7 +483,12 @@ ul {
   border: 2px white solid;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
+  #doner3 {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
   .donImg {
     display: block;
   }
