@@ -1,18 +1,29 @@
-.backround-pic-faq{
-    
-background-image: url(Media/womanWaringMasks.jpg);
-height: 600px;
-background-size: cover;
-background-position: center 
+.backround-pic-faq {
 
-
+    background-image: url(Media/womanWaringMasks.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center
 }
 
-.backroundfaq{
+.accordion-container.container {
+    position: relative;
+    background-color: red;
+    top: 100px;
+    padding     :50px;
+    max-height: 580px;
+}
+
+$theme-colors: (
+  "custom-color": #900
+);
+
+.backroundfaq {
     background-color: $Beige;
     height: 800px;
-    width : 100%
+    width: 100%
 }
+
 .yellowlineFaq {
     background-color: $Green;
     position: relative;
@@ -76,31 +87,37 @@ background-position: center
     border-bottom: 2px white solid;
 }
 
-.questionMarkWraper{
+.accordion-flush {
+    background-color: red;
+}
+
+.questionMarkWraper {
     position: absolute;
     top: 100px;
     left: 30px;
-    
+
 }
 
-.top-box{
+.top-box {
     position: relative;
     width: 550px;
     height: 260px;
     background-color: silver;
     border-radius: 10px;
-    border : 3px black solid;
+    border: 3px black solid;
     top: 250px;
     left: 10%;
     padding: 20px;
-    
+
+    transition: 1.5s ease-in-out;
+
 }
 
 
 
-.faq{
+.faq {
     position: relative;
-    width: 800px;
+    width: 50%;
     left: 650px;
     top: 530px;
     height: 100px;
@@ -108,12 +125,19 @@ background-position: center
     transition: 1.5s ease-in-out;
     padding: 20px;
     border-radius: 10px;
-    border: 3px solid black
+    border: 3px solid black;
+
+    .my-accordion .accordion-button:not(.collapsed) {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+
 }
 
-.faq:hover{
-    position:relative;
-    top: 100px;
-    height: 800px;
+// .faq:hover{
+//     position:relative;
+//     top: 100px;
+//     height: 800px;
 
-}
+// }

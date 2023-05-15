@@ -49,32 +49,32 @@
 
     <div class="backround-pic-faq">
 
-        <div class="faq">Q: How much does it cost to go to Mardi Gras?
-            It's free! Not only that, but you'll leave with bags of Mardi Gras beads and throws. That's why we call it the "Greatest Free Show on Earth!"
+        <div class="faq" id="faqUp" onclick="
+        revertMoveBoxes()">Q: How much does it cost to go to Mardi Gras?
+            It's free! Not only that, but you'll leave with bags of Mardi Gras beads and throws. That's why we call it
+            the "Greatest Free Show on Earth!"
             Q: I only have limited time. What is the prime time to visit during Mardi Gras?
-            The weekend before Fat Tuesday is the prime time to visit New Orleans for Mardi Gras. This is the weekend when Bacchus and Endymion, two of the biggest parades of the season, roll down the streets of New Orleans. The streets are packed all day Saturday and Sunday with parade watchers. If you can stay longer than a weekend, Monday (Lundi Gras) and Fat Tuesday are also great days to experience Mardi Gras. Orpheus, another big parade, rolls on that Monday night, and the Zulu Lundi Gras festival goes on all day. On Fat Tuesday, walking around the French Quarter and seeing all of the costumes and masks is a unique and thrilling experience.
-            
-             
-        
-        
-        
-        
-        
-        
+            The weekend before Fat Tuesday is the prime time to visit New Orleans for Mardi Gras. This is the weekend
+            when Bacchus and Endymion, two of the biggest parades of the season, roll down the streets of New Orleans.
+            The streets are packed all day Saturday and Sunday with parade watchers. If you can stay longer than a
+            weekend, Monday (Lundi Gras) and Fat Tuesday are also great days to experience Mardi Gras. Orpheus, another
+            big parade, rolls on that Monday night, and the Zulu Lundi Gras festival goes on all day. On Fat Tuesday,
+            walking around the French Quarter and seeing all of the costumes and masks is a unique and thrilling
+            experience.
         </div>
 
 
-<section class="top-box">
-        <div>
-            <h1>Frequently Asked Questions</h1>
-        </div>
+        <section class="top-box" id="faqDown" onclick="moveBoxes()">
+            <div>
+                <h1>Frequently Asked Questions</h1>
+            </div>
 
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, earum quod nihil dolorum accusantium
-            quasi alias nam illum dolore corporis odit, expedita nemo maxime possimus.
-        </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, earum quod nihil dolorum accusantium
+                quasi alias nam illum dolore corporis odit, expedita nemo maxime possimus.
+            </div>
 
-            </section>
+        </section>
 
 
         <div class="questionMarkWraper">
@@ -85,94 +85,213 @@
 
 
     </div>
-<div class="backroundfaq">
-    <div class="yellowlineFaq"></div>
-    <div class="greenlineFaq"></div>
-    <div class="purplelineFaq"></div>
-</div>
-<div class="footer-container m-0 p-0">
-
-    <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
-
-        <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
-
-            <div class="me-5">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <div>
-                <a  href="https://www.facebook.com/MardiGrasNewOrleans" class="icon me-4"  target="_blank">
-                    <img alt="" src="Media\facebook (2).png" width="30px"></img>
-                </a>
-                <a class="icon me-4" href="https://twitter.com/MardiGrasNOLA" target="_blank" ><img src="Media/twitter (1).png" width="30px"></img>
-                </a>
-                <a class="icon me-4" href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img src="Media/instagram (1).png" width="30px"></img>
-                </a>
-                <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank" class="icon me-4">
-                    <img width="40px" src="Media/tripadvisor.png"></img>
-                </a>
-                <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank" class="icon me-4">
-                    <img src="Media/youtube (2).png" width="40px"></img>
-                </a>
-            </div>
-        </section>
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-
-                <div class="row mt-3">
-
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-                        <h6 class="text-uppercase fw-bold">Mardi Gras Festival</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p>Join the party at Mardi Gras, the ultimate festival of color, music, and celebration!
-                            Experience the energy and excitement of this centuries-old tradition with parades,
-                            costumes, and delicious food. Come and dance, laugh, and indulge in the spirit of joy
-                            and togetherness that defines Mardi Gras. Let the good times roll
-                        </p>
+    <div class="backroundfaq">
+        <div class="yellowlineFaq"></div>
+        <div class="greenlineFaq"></div>
+        <div class="purplelineFaq"></div>
+        <div class="accordion-container container ">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="bg-theme-colors accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is Mardi Gras?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Mardi Gras is a festival that originated in France and is now
+                            celebrated in many countries
+                            around the world, particularly in New Orleans, Louisiana. The festival is celebrated in the
+                            days leading up to Ash Wednesday, which marks the beginning of the Christian season of Lent.
+                        </div>
                     </div>
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            When is Mardi Gras?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Mardi Gras is celebrated on the day before Ash Wednesday, which
+                            falls on a different day each year depending on the date of Easter. However, the festival
+                            season in New Orleans typically begins in early January and lasts until the day before Ash
+                            Wednesday.</div>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                        <h6 class="text-uppercase fw-bold">links</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p>
-                            <a href="index.html" class="text-dark">Home</a>
-                        </p>
-                        <p>
-                            <a href="about.html" class="text-dark">About</a>
-                        </p>
-                        <p>
-                            <a href="faq.html" class="text-dark">FAQ</a>
-                        </p>
-                        <p>
-                            <a href="media.html" class="text-dark">Media</a>
-                        </p>
-                        <p>
-                            <a href="contact.html" class="text-dark">Contact</a>
-                        </p>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            What happens during Mardi Gras?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Mardi Gras is a time of revelry and celebration, with parades,
+                            parties, and other events taking place throughout the festival season. People dress up in
+                            colorful costumes, throw beads and other trinkets to the crowds, and enjoy traditional food
+                            and drink.</div>
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold">Contact</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p><i class="fas fa-home mr-3"></i>5343 Chetunt St New Orleans LA 70115-3054 USA</p>
-                        <p><i class="fas fa-envelope mr-3"></i>press@mardigrasneworleans.com.</p>
-                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            What is the significance of the beads and trinkets thrown during Mardi Gras?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The beads and other trinkets thrown during Mardi Gras are a
+                            tradition that dates back to the early days of the festival. They are said to represent the
+                            colors of the festival and to bring good luck to those who catch them.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Is Mardi Gras family-friendly?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">While Mardi Gras is known for its wild parties and risqué behavior,
+                            there are also many family-friendly events that take place during the festival. Some parades
+                            and events are specifically geared toward children, and many families enjoy attending Mardi
+                            Gras together.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            How can I attend Mardi Gras in New Orleans?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">If you're interested in attending Mardi Gras in New Orleans, it's
+                            best to plan ahead and book accommodations well in advance, as the festival draws large
+                            crowds. You can also check the official Mardi Gras website for information on events,
+                            parades, and other activities taking place during the festival.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            What should I wear to Mardi Gras?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Mardi Gras is a time to dress up in colorful costumes and wear
+                            masks, hats, and other festive accessories. Many people also choose to wear traditional
+                            Mardi Gras colors of purple, green, and gold. However, it's important to keep in mind that
+                            New Orleans can be quite warm and humid during the festival season, so comfortable and
+                            breathable clothing is also recommended.</div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright © 1996-2023
-            MardiGrasNewOrleans.com
         </div>
-    </footer>
-</div>
 
+    </div>
+
+    <div class="footer-container m-0 p-0">
+
+        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+
+            <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/MardiGrasNewOrleans" class="icon me-4" target="_blank">
+                        <img alt="" src="Media\facebook (2).png" width="30px"></img>
+                    </a>
+                    <a class="icon me-4" href="https://twitter.com/MardiGrasNOLA" target="_blank"><img
+                            src="Media/twitter (1).png" width="30px"></img>
+                    </a>
+                    <a class="icon me-4" href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img
+                            src="Media/instagram (1).png" width="30px"></img>
+                    </a>
+                    <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank" class="icon me-4">
+                        <img width="40px" src="Media/tripadvisor.png"></img>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"
+                        class="icon me-4">
+                        <img src="Media/youtube (2).png" width="40px"></img>
+                    </a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+
+                    <div class="row mt-3">
+
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Mardi Gras Festival</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>Join the party at Mardi Gras, the ultimate festival of color, music, and celebration!
+                                Experience the energy and excitement of this centuries-old tradition with parades,
+                                costumes, and delicious food. Come and dance, laugh, and indulge in the spirit of joy
+                                and togetherness that defines Mardi Gras. Let the good times roll
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="index.html" class="text-dark">Home</a>
+                            </p>
+                            <p>
+                                <a href="about.html" class="text-dark">About</a>
+                            </p>
+                            <p>
+                                <a href="faq.html" class="text-dark">FAQ</a>
+                            </p>
+                            <p>
+                                <a href="media.html" class="text-dark">Media</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-dark">Contact</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i>5343 Chetunt St New Orleans LA 70115-3054 USA</p>
+                            <p><i class="fas fa-envelope mr-3"></i>press@mardigrasneworleans.com.</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright © 1996-2023
+                MardiGrasNewOrleans.com
+            </div>
+        </footer>
+    </div>
+    <script src="js/faq.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

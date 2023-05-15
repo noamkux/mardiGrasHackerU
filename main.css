@@ -454,6 +454,14 @@ button {
   background-position: center;
 }
 
+.accordion-container.container {
+  position: relative;
+  background-color: red;
+  top: 100px;
+  padding: 50px;
+  max-height: 580px;
+}
+
 .backroundfaq {
   background-color: #f7e8d4;
   height: 800px;
@@ -515,6 +523,10 @@ button {
   border-bottom: 2px white solid;
 }
 
+.accordion-flush {
+  background-color: red;
+}
+
 .questionMarkWraper {
   position: absolute;
   top: 100px;
@@ -531,11 +543,12 @@ button {
   top: 250px;
   left: 10%;
   padding: 20px;
+  transition: 1.5s ease-in-out;
 }
 
 .faq {
   position: relative;
-  width: 800px;
+  width: 50%;
   left: 650px;
   top: 530px;
   height: 100px;
@@ -545,11 +558,9 @@ button {
   border-radius: 10px;
   border: 3px solid black;
 }
-
-.faq:hover {
-  position: relative;
-  top: 100px;
-  height: 800px;
+.faq .my-accordion .accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: #fff;
 }
 
 .backround-pic-media {
@@ -644,7 +655,12 @@ button {
 }
 
 .mediaHeader {
-  margin-top: 30px;
+  display: grid;
+  width: 1200px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: RED;
+  margin: auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -759,6 +775,22 @@ button {
   }
   .hiddenVid {
     display: none;
+  }
+  .mediaHeader {
+    display: grid;
+    width: 275px;
+    height: 300px;
+    margin-bottom: 50px;
+    left: 500px;
+  }
+  .mediaHeader h1 {
+    font-size: 22pt;
+  }
+  .mediaHeader h2 {
+    font-size: 2px;
+  }
+  .mediaHeader h4 {
+    font-size: 2px;
   }
 }
 @media (max-width: 600px) {
