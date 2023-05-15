@@ -5,7 +5,7 @@ let cards = [
         style="background-color: bisque">
     <div class="card-body">
         <h5 class="card-title">Walk-On’s Sports Bistreaux</h5>
-        <div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseWalkons"
+        <div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapseWalkons"
             aria-expanded="false" aria-controls="collapseWalkons">Click Here For More Details</div>
     
         <p class="card-text collapse" id="collapseWalkons">There’s really no better way to describe the
@@ -33,7 +33,7 @@ let cards = [
     style="background-color: bisque;">
 <div class="card-body">
     <h5 class="card-title">Sheraton New Orleans</h5>
-    <div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseSheraton"
+    <div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapseSheraton"
         aria-expanded="false" aria-controls="collapseSheraton">Click Here For More Details</div>
 
     <p class="card-text collapse" id="collapseSheraton">The Sheraton Hotel is a luxurious 4-star hotel
@@ -58,7 +58,7 @@ let cards = [
     style="padding: 18px;background-color: bisque">
 <div class="card-body">
     <h5 class="card-title">Ace Hotels New Orleans</h5>
-    <div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseAceHotels"
+    <div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapseAceHotels"
         aria-expanded="false" aria-controls="collapseAceHotels">Click Here For More Details</div>
 
     <p class="card-text collapse" id="collapseAceHotels">Ace Hotel New Orleans is a trendy boutique
@@ -82,7 +82,7 @@ let cards = [
     style="background-color: bisque; padding: 5px">
 <div class="card-body">
     <h5 class="card-title">Ritz-Carlton Hotels</h5>
-    <div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseRitzCarlton"
+    <div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapseRitzCarlton"
         aria-expanded="false" aria-controls="collapseRitzCarlton">Click Here For More Details</div>
 
     <p class="card-text collapse" id="collapseRitzCarlton">Ritz-Carlton New Orleans is a luxury hotel located in the heart of the French Quarter. Features include a spa, fine dining restaurant, and elegant accommodations. Highlights: opulent decor, excellent service, and prime location.
@@ -112,7 +112,7 @@ let cards = [
 style="background-color: bisque; padding: 5px;">
 <div class="card-body">
 <h5 class="card-title">Premium Parking</h5>
-<div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapsepremuimParking"
+<div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapsepremuimParking"
     aria-expanded="false" aria-controls="collapsepremuimParking">Click Here For More Details</div>
 
 <p class="card-text collapse" id="collapsepremuimParking">Premium Parking manages parking in New
@@ -135,7 +135,7 @@ style="background-color: bisque; padding: 5px;">
 style="background-color: bisque; padding: 5px;">
 <div class="card-body">
 <h6 class="card-title pb-1">Louisiana Children's Museum</h6>
-<div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseLCM" aria-expanded="false"
+<div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapseLCM" aria-expanded="false"
     aria-controls="collapseLCM">Click Here For More Details</div>
 
 <p class="card-text collapse" id="collapseLCM">Louisiana Children's Museum is a fun and educational
@@ -158,7 +158,7 @@ style="background-color: bisque; padding: 5px;">
  <div class="card-body">
      <h5 class="card-title">The Haunted Museum
      </h5>
-     <div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseAceHotels"
+     <div class="text-start click-doner click-doner" data-bs-toggle="collapse" data-bs-target="#collapseAceHotels"
          aria-expanded="false" aria-controls="collapseAceHotels">Click Here For More Details</div>
 
      <p class="card-text collapse" id="collapseAceHotels">The Haunted Museum in New Orleans is a popular
@@ -182,7 +182,7 @@ style="background-color: bisque; padding: 5px;">
     style="background-color: bisque; padding: 5px">
 <div class="card-body">
     <h5 class="card-title">Museum of Death</h5>
-    <div class="text-end" data-bs-toggle="collapse" data-bs-target="#collapseMOD" aria-expanded="false"
+    <div class="text-start click-doner" data-bs-toggle="collapse" data-bs-target="#collapseMOD" aria-expanded="false"
         aria-controls="collapseMOD">Click Here For More Details</div>
 
     <p class="card-text collapse" id="collapseMOD">Museum of Death in New Orleans showcases
